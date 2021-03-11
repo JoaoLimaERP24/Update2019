@@ -23,7 +23,7 @@ namespace SalesWebMvc.Controllers
             _sellerService = sellerService;
             _departmentService = departmentService;
         }
-
+      
         public async Task<IActionResult> Index()
         {
             var list = await _sellerService.FindAllAsync();
